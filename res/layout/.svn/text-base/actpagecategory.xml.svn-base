@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 카테고리 등록 --> 
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/actsetting_categorypage"
+	android:layout_height="fill_parent" android:layout_width="fill_parent"
+	android:orientation="vertical">
+	
+	<TextView android:layout_height="wrap_content" 
+		android:layout_width="fill_parent" android:id="@+id/actsetting_categoryTitle" android:text="Category"
+		android:textColor="#000000"></TextView>
+	<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:orientation="horizontal">
+		<EditText android:id="@+id/actsetting_editCategoryName"
+			android:layout_weight="8" android:layout_width="wrap_content" android:layout_height="wrap_content"></EditText>
+		<CheckBox android:id="@+id/actsetting_chkContentTypeToggle"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_gravity="right" android:text="Income" android:textColor="#000000">
+		</CheckBox>	
+		<Button android:id="@+id/actsetting_btnSettingIconId" 
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_gravity="right" android:text="Icon Setting"></Button>
+		
+	</LinearLayout>
+	<!-- 
+	<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:orientation="horizontal">
+		
+		<EditText android:id="@+id/actsetting_editCategoryIcon"
+			android:layout_weight="8" android:layout_width="wrap_content" android:layout_height="wrap_content"></EditText>
+		<Button android:id="@+id/actsetting_btnSettingIconId" 
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_gravity="right" android:text="Icon Setting"></Button>
+	</LinearLayout>
+	-->
+	<Button android:id="@+id/actsetting_btnInputCategory" 
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:text="Input"></Button>
+	
+	<ListView android:id="@+id/actsetting_categoryList" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+	</ListView>										
+</LinearLayout>

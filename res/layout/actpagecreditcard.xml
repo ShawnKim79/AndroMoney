@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+  
+<!-- 카드등록 -->
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/actsetting_creditcardpage"
+	android:layout_height="fill_parent" android:layout_width="fill_parent"
+	android:orientation="vertical">
+	<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" 
+		android:id="@+id/actsetting_creditTitle" android:text="creditSetting" android:textColor="#000000"></TextView>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		
+		
+		<TextView android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Card Name" android:layout_marginRight="5px" android:layout_marginLeft="5px" android:textColor="#000000"></TextView><EditText android:id="@+id/actsetting_editCardName"
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:singleLine="true">
+		</EditText>
+		<!-- 
+		<ImageButton android:id="@+id/actsetting_btnPaymentDay" 
+			android:layout_width="wrap_content" android:layout_height="wrap_content" 
+			android:src="@drawable/calendar"
+			></ImageButton>	
+		<ImageButton android:id="@+id/actsetting_btnClosingday" 
+			android:layout_width="wrap_content" android:layout_height="wrap_content" 
+			android:src="@drawable/calendar" ></ImageButton>
+		-->		
+	
+</LinearLayout>
+	<TableLayout android:layout_width="fill_parent" 
+		android:layout_height="wrap_content">
+		<TableRow>
+			<EditText android:id="@+id/actsetting_editPaymentDay" 
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent" android:singleLine="true" android:text="Card Limit"/>
+			<EditText android:id="@+id/actsetting_editCloseDay" 
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent" android:text="Payment Day" android:singleLine="true"/>
+			<EditText android:id="@+id/actsetting_editCardLimit"
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent" android:singleLine="true" android:text="Close Day"/>
+		</TableRow>
+	</TableLayout>
+				
+	<Button android:id="@+id/actsetting_btnInputCreditCard" 
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:text="Input"></Button>
+	<ListView android:id="@+id/actsetting_CreditCardList" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+	</ListView>	
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical" 
+  android:layout_width="fill_parent" 
+  android:layout_height="fill_parent" android:scrollbars="vertical">
+	<TextView android:id="@+id/TextView01" android:layout_height="wrap_content" 
+		android:layout_width="fill_parent" android:text="SMS Message" 
+		android:paddingBottom="5px" android:paddingLeft="5px" 
+		android:paddingTop="5px" android:paddingRight="5px"
+		android:background="#2f4f4f" android:textStyle="bold" android:textSize="20px"></TextView>
+	<EditText android:text="" 
+		android:layout_height="wrap_content" 
+		android:id="@+id/EditTextSMS" 
+		android:layout_width="fill_parent" 
+		android:singleLine="false" 
+		android:editable="false" 
+		android:lines="5" android:scrollbars="vertical" android:layout_marginLeft="5px" android:layout_marginRight="5px" android:layout_marginTop="5px"></EditText>
+	<Spinner android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginLeft="3px" android:layout_marginRight="3px" android:id="@+id/SpinnerCategory"></Spinner>
+	<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnConfirm" android:text="Confirm" android:layout_gravity="center_horizontal"></Button>
+
+
+</LinearLayout>

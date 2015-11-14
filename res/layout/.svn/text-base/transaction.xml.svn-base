@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="fill_parent" android:scrollbars="vertical">
+  	<TextView
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:text="New Transaction" android:background="#2f4f4f" android:layout_marginBottom="5px" android:paddingBottom="5px" android:paddingLeft="5px" android:paddingRight="5px" android:paddingTop="5px" android:textStyle="bold" android:textSize="20px">
+  	</TextView>
+  	
+  	<ScrollView android:layout_width="fill_parent"
+  		android:layout_height="fill_parent">
+  	
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+  	<LinearLayout android:orientation="horizontal"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content">
+		<TextView 
+			android:id="@+id/TextView01" 
+			android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="날짜 선택" android:layout_marginLeft="5px" android:width="45px" android:textSize="15px">
+		</TextView>
+		<DatePicker android:id="@+id/DatePicker01" 
+			android:layout_height="wrap_content" android:layout_marginRight="5px" android:layout_width="fill_parent">
+		</DatePicker>
+	</LinearLayout>	
+	<LinearLayout android:orientation="horizontal"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content" android:layout_gravity="center_horizontal">
+  		<TextView 
+			android:text="Pay" 
+			android:id="@+id/TextView01" 
+			android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:width="45px" android:textSize="15px">
+		</TextView>
+		
+  	<EditText android:id="@+id/EditText01" android:layout_height="wrap_content" android:layout_marginRight="5px" android:layout_width="fill_parent" android:clickable="true"></EditText>
+	
+	</LinearLayout>
+  	<LinearLayout android:orientation="horizontal"
+  		android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_width="fill_parent">
+  		<TextView 
+			android:text="Desc" 
+			android:id="@+id/TextView01" 
+			android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5px" android:width="45px" android:textSize="15px">
+		</TextView>
+  	<EditText android:id="@+id/EditText02" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginRight="5px" android:lines="2"></EditText>
+	</LinearLayout>
+	
+<ViewFlipper android:id="@+id/ViewFlipper01" 
+	android:layout_height="wrap_content" android:layout_width="fill_parent">
+	<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+		<TextView android:text="Income" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></TextView>
+		<Spinner android:id="@+id/spinnerIncome"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		</Spinner>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal">
+		<TextView android:text="Outcome" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"></TextView>
+		<Spinner android:id="@+id/spinnerOutcome"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		</Spinner>
+	</LinearLayout>
+	
+</ViewFlipper>
+
+<Button android:text="@+id/Button02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:id="@+id/btnTransaction"></Button>
+</LinearLayout>
+</ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="org.Hangaram.Hangaroid.AndroMoney"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".main"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity android:name=".SMS" android:label="@string/app_name"/>
+		<activity android:name=".transaction" android:label="@string/app_name"/>
+		
+		<!-- shpark --> 
+		<!-- Main Activity -->
+		<activity android:name=".ActHome"/>
+		<activity android:name=".ActSearch"/>
+		<activity android:name=".ActReport"/>
+		<activity android:name=".ActSetting"/>
+		<activity android:name=".ActCanvasTest"/>
+		<activity android:name=".DlgCalendar"
+			android:theme="@android:style/Theme.Dialog"/>
+		
+		<!-- Sub Activity -->
+		<activity android:name=".ActTransaction"/> 
+		
+		<!-- dhkim -->
+		<activity android:name=".setting"
+			android:label="@string/app_name"/>
+			
+		<activity android:name=".ActCategoryIcon"
+			android:theme="@android:style/Theme.Dialog">
+				
+		</activity>
+		<!-- shkim for test -->
+		<activity android:name=".ActTest" android:label="@string/app_name"/>
+
+		<receiver android:name="SmsReceiver">
+			<intent-filter>
+				<action android:name="android.provider.Telephony.SMS_RECEIVED" />
+			</intent-filter>
+		</receiver>
+		
+    </application>
+    <uses-sdk android:minSdkVersion="5" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>    
+	<!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>-->
+</manifest> 

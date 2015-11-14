@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:background="#F0F0F0" android:layout_width="fill_parent" android:layout_height="fill_parent">
+<TextView android:id="@+id/Title" android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Home"></TextView>
+<Button android:text="SMS" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnCallSMS"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnCallTransaction" android:text="Transaction"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnSetting" android:text="Setting"></Button>
+<Button android:id="@+id/Button01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Category"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/btnTest" android:text="Test Act"></Button>
+</LinearLayout>

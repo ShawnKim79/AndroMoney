@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Main!</string>
+    <string name="app_name">AndroMoney</string>
+<string name="ParserRule01">[일시불.승인]\n3,500원\n신한BC(0*9*)김대현님\n03/21 21:54\nGS25대전만년점</string>
+</resources>

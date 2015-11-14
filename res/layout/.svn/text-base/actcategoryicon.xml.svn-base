@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+	<ScrollView android:id="@+id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<TableLayout android:id="@+id/TableLayout01" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_gravity="center_vertical|center_horizontal">
+			<TableRow>
+				<ImageButton android:id="@+id/actcategoryicon_btnIcon01" 
+				 	android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				 	android:src="@drawable/airplane_tourism" android:tag="drawable/airplane_tourism"></ImageButton>
+				<ImageButton android:id="@+id/actcategoryicon_btnIcon02" 
+				 	android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				 	android:src="@drawable/anniversary" android:tag="drawable/anniversary"></ImageButton>
+				<ImageButton android:id="@+id/actcategoryicon_btnIcon03" 
+				 	android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				 	android:src="@drawable/bank" android:tag="drawable/bank"></ImageButton>
+
+			</TableRow>
+			<TableRow>
+				
+				<ImageButton android:id="@+id/actcategoryicon_btnIcon04" 
+				 	android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				 	android:src="@drawable/bar" android:tag="drawable/bar"></ImageButton>
+				<ImageButton android:id="@+id/actcategoryicon_btnIcon05" 
+					android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					android:src="@drawable/carrepair" android:tag="drawable/carrepair"></ImageButton>
+				<ImageButton android:id="@+id/actcategoryicon_btnIcon06" 
+				 	android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				 	android:src="@drawable/drugs" android:tag="drawable/drugs"></ImageButton>
+			</TableRow>
+			<TableRow>
+				<ImageButton android:id="@+id/actcategoryicon_btnIcon07" 
+				 	android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				 	android:src="@drawable/fastfood" android:tag="drawable/fastfood"></ImageButton>
+				
+			</TableRow>
+		</TableLayout>
+		
+	</ScrollView>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical" android:background="#F0F0F0">
+	<LinearLayout android:id="@+id/actsetting_LinearLayoutTitle" 
+		android:layout_height="wrap_content" android:layout_width="fill_parent" 
+		android:background="@drawable/titlebg" android:layout_gravity="center_vertical">
+	</LinearLayout>
+	 
+	<ViewFlipper android:id="@+id/actsetting_details" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">
+        
+        <!-- 페이지는 Runtime 시 추가 됨  -->
+	</ViewFlipper>
+	
+</LinearLayout>
